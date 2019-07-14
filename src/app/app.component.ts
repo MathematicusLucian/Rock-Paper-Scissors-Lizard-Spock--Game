@@ -21,6 +21,8 @@ export class AppComponent {
 
   pick( weapon: string): void { 
     this.playerWeapon = weapon; 
-    this.computerWeapon =  Math.floor(Math.random() * 3 ) ;
+    this.computerWeapon =  Math.floor(Math.random() * 3 );
+
+    
   }
 }
