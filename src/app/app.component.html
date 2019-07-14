@@ -1,25 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<mat-toolbar color="primary">
   <h1>
     Welcome to {{ title }}!
   </h1>
-</div> 
-<div>
-  <div>
-    Your score: <span id="player-score" class="score">{{ scores[0] }}</span>
-  </div>
-  <div>
-    Computer score: <span id="computer-score" class="score">{{ scores[1] }}</span>
-  </div>
-  <div>{{ resultMsg }}</div>
-  <h3>
-    Select a weapon  
-  </h3>
-  <ul>
-    <li (click)="chooseWeapon(0)">rock</li>
-    <li (click)="chooseWeapon(1)">paper</li>
-    <li (click)="chooseWeapon(2)">scissors</li>
-  </ul>
-</div>
+</mat-toolbar>
+<mat-grid-list cols="2" rowHeight="4em">
+    <mat-grid-tile>
+      Your score: <span id="player-score" class="score">{{ scores[0] }}</span>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      Computer score: <span id="computer-score" class="score">{{ scores[1] }}</span>
+    </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="4em">
+  <mat-grid-tile>
+    <div>{{ resultMsg }}</div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h3>
+      Select a weapon  
+    </h3>
+    <ul>
+      <li (click)="chooseWeapon(0)">rock</li>
+      <li (click)="chooseWeapon(1)">paper</li>
+      <li (click)="chooseWeapon(2)">scissors</li>
+    </ul>
+  </mat-grid-tile>
+</mat-grid-list>
 
 <router-outlet></router-outlet>
