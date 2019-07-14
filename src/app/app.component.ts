@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'Roshambo: The Rock Paper Scissors Game';
 
   scores = [0 , 0]; 
+  playerWeapon = "";
+  computerWeapon = 0;
   playerWinsRound = -1;
   enemyWinsRound  = -1;
   weapons = [
@@ -16,4 +18,9 @@ export class AppComponent {
     'paper',
     'scissors'
   ];  
+
+  pick( weapon: string): void { 
+    this.playerWeapon = weapon; 
+    this.computerWeapon =  Math.floor(Math.random() * 3 ) ;
+  }
 }
