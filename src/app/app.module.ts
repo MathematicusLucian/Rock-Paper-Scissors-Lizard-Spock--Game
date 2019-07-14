@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, 
          MatGridListModule,
+         MatBadgeModule,
          MatButtonModule } from '@angular/material';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -22,6 +23,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     BrowserAnimationsModule,
     MatToolbarModule, 
     MatGridListModule,
+    MatBadgeModule,
     MatButtonModule,
     AngularFontAwesomeModule
   ],

@@ -9,10 +9,10 @@
 </mat-grid-list>
 <mat-grid-list cols="2" rowHeight="4em">
     <mat-grid-tile>
-      Your score: <span id="player-score" class="score">{{ scores[0] }}</span>
+      <h2 matBadge="{{ scores[0] }}" matBadgeColor="accent">Your score</h2> 
     </mat-grid-tile>
     <mat-grid-tile>
-      Computer score: <span id="computer-score" class="score">{{ scores[1] }}</span>
+      <h2 matBadge="{{ scores[1] }}" matBadgeColor="accent">Computer score</h2> 
     </mat-grid-tile>
 </mat-grid-list>
 <mat-grid-list cols="1" rowHeight="7em">
