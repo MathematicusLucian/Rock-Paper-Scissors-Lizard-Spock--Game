@@ -37,7 +37,7 @@ export class AppComponent {
       this.scores[1] += 1; 
       this.result = 2;
     }
-    this.resultMsg = this.resultStrings[this.result] + this.weapons[this.computerWeapon];
+    this.resultMsg = "Computer chooses " + this.weapons[this.computerWeapon] + " ||| " + this.resultStrings[this.result];
   }
 
   chooseWeapon( weapon: number): void { 
