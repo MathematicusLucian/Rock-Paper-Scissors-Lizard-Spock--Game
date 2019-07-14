@@ -28,7 +28,7 @@ export class AppComponent {
     if( this.playerWeapon == this.computerWeapon){
       //DRAW
       this.result = 0;
-    }else if(1==1){
+    }else if(( (this.playerWeapon - this.computerWeapon + 3) % 3) == 1){
       //PLAYER WIN
       this.scores[0] += 1; 
       this.result = 1;
