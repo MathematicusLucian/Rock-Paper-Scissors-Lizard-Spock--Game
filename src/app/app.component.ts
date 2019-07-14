@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Roshambo: The Rock Paper Scissors Game';
+  title = 'Roshambo';
+  desc = "The Rock Paper Scissors Game";
   weapons = [
     'rock',
     'paper',

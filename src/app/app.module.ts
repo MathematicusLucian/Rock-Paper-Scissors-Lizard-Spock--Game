@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, 
-         MatIconModule, 
          MatGridListModule,
          MatButtonModule } from '@angular/material';
+
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 
 @NgModule({
   declarations: [
@@ -18,10 +20,10 @@ import { MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule, 
+    MatToolbarModule, 
     MatGridListModule,
-    MatButtonModule
+    MatButtonModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
