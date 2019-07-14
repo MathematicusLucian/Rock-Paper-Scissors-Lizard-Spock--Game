@@ -7,18 +7,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Roshambo: The Rock Paper Scissors Game';
-
-  scores = [0 , 0]; 
-  playerWeapon = 0;
-  computerWeapon = 0; 
-  result = 0;
   weapons = [
     'rock',
     'paper',
     'scissors'
   ];  
+  playerWeapon = 0;
+  computerWeapon = 0; 
+  scores = [0 , 0]; 
+  result = 4;
+  resultStrings = [
+    'DRAW',
+    'PLAYER WIN',
+    'COMPUTER WIN',
+    ''
+  ];
+  resultMsg = "AWAITING GAME COMMENCEMENT";
 
-  calculateResult(){
+  calculateResult(): void{
     if( this.playerWeapon == this.computerWeapon){
       //DRAW
       this.result = 0;
@@ -31,10 +37,14 @@ export class AppComponent {
       this.scores[1] += 1; 
       this.result = 2;
     }
+    this.resultMsg = this.resultStrings[this.result] + this.weapons[this.computerWeapon];
   }
 
-  pick( weapon: number): void { 
+  chooseWeapon( weapon: number): void { 
     this.playerWeapon = weapon; 
+    console.log(this.playerWeapon);
     this.computerWeapon =  Math.floor(Math.random() * 3 );
+    console.log(this.computerWeapon);
+    this.calculateResult();
   }
 }
