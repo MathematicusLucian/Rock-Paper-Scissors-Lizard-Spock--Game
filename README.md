@@ -20,4 +20,4 @@ Lizard and Spock reduce the chance of a tie by smashing, poisoning, eating, or v
 - (and as it always has) Rock crushes scissors.   
 
 Video:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3hxC9bgtA7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=3hxC9bgtA7M">Sheldon Cooper talks RPSLS</a>
