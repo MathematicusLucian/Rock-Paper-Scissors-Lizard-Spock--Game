@@ -1,5 +1,5 @@
 # roshambo-beta
-Expansaion of my ealier Angular (TypeScript) implementation of Roshambo (rock-paper-scissors), now featuing lizard and spock. Use of Google Material and Font Awesome.  
+Expansion of my earlier Angular (TypeScript) implementation of Roshambo (rock-paper-scissors), now featuing lizard and spock. Use of Google Material and Font Awesome.  
 
 The additional weapons were added by Sam Kass and Karen Bryla before being adopted, reordered, and overpopularised by The Big Bang Theory. Kass was officially referenced by Sheldon as the creator of the game during the "The Rothman Disintegration", after which he states, "Hail Sam Kass!" to which Leonard, Howard, Raj, and Sheldon all then chant "Hail!" while raising their hands.    
 
