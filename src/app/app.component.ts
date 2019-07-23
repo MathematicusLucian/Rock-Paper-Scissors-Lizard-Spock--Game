@@ -12,8 +12,8 @@ export class AppComponent {
     'rock',
     'paper',
     'scissors',
-    'lizard',
-    'spock'
+    'spock',
+    'lizard'
   ];  
   playerWeapon = 0;
   computerWeapon = 0; 
