@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Roshambo';
-  desc = "The Rock Paper Scissors Game";
+  title = 'Rock Paper Scissors Lizard Spock';
+  desc = "The Rock Paper Scissors Game plus Lizard Spock";
   weapons = [
     'rock',
     'paper',
-    'scissors'
+    'scissors',
+    'lizard',
+    'spock'
   ];  
   playerWeapon = 0;
   computerWeapon = 0; 
@@ -29,7 +31,11 @@ export class AppComponent {
     if( this.playerWeapon == this.computerWeapon){
       //DRAW
       this.result = 0;
-    }else if(( (this.playerWeapon - this.computerWeapon + 3) % 3) == 1){
+    }else if(( (this.playerWeapon - this.computerWeapon + 5) % 5) == 1){
+      //PLAYER WIN
+      this.scores[0] += 1; 
+      this.result = 1;
+    }else if(( (this.playerWeapon - this.computerWeapon + 5) % 5) == 3){
       //PLAYER WIN
       this.scores[0] += 1; 
       this.result = 1;
